@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatapp</title>
+
+    <!-- bootstrap minified css cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-6 my-auto d-flex">
+                <div class="phonescreen ml-auto position-relative">
+                    <div class="notch position-absolute"></div>
+
+                    <div class="appheader d-flex align-items-center mt-2 pt-4 position-absolute w-100 text-white">
+                        <i class="fas fa-chevron-left ml-3"></i>
+                        <img class="img-thumbnail mr-1" src="./images/avatar.jpg" alt="">
+                        <div class="apptitle">
+                            <h6 class="m-0">Samuel Green</h6>
+                            <p class="m-0">Available to Walk</p>
+                        </div>
+                        <i class="fas fa-ellipsis-v mr-3 ml-auto"></i>
+                    </div>
+
+                    <div class="messages">
+                        <p class="message message-in">
+                            That sounds great. I’d be happy with that.
+                        </p>
+                        <p class="message message-in">
+                            Could you send over some pictures of your dog, please?
+                        </p>
+                        <div class="message message-out d-flex justify-content-between">
+                            <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-1.jpg" alt="">
+                            <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-2.jpg" alt="">
+                            <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-3.jpg" alt="">
+                        </div>
+                        <p class="message message-out">
+                            Here are a few pictures. She’s a happy girl!
+                        </p>
+                        <p class="message message-out">
+                            Can you make it?
+                        </p>
+                        <p class="message message-in">
+                            She looks so happy! The time we discussed works. How long shall I take her out for?
+                        </p>
+                        <div class="message message-in option">
+                            30 minute walk
+                            <span class="price">$29</span>
+                        </div>
+                        <div class="message message-in option">
+                            1 hour walk
+                            <span class="price">$49</span>
+                        </div>
+                        <div class="typehere position-absolute">
+                            <div class="d-flex position-relative">
+                                <input class="form-control" type="text" name="message" placeholder="Type a message...">
+                                <button class="btn btn-primary position-absolute border-0" type="submit">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 my-auto">
+                <div class="content w-75">
+                    <h1>Simple booking</h1>
+                    <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss
+                        arrangements
+                        and make bookings. Once the walk has been completed you can rate your walker and book again all
+                        through
+                        the chat.</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
