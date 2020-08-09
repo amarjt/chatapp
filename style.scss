@@ -41,7 +41,7 @@ body {
             .phonescreen {
                 width: 250px;
                 height: 500px;
-                background: #f5f3f7;
+                background: #f5f3f7; 
                 border-radius: 1.75rem;
                 border: .70rem solid #ffffff;
                 margin-right: 15%;
@@ -91,54 +91,86 @@ body {
                 .messages {
                     margin: .5rem;
                     margin-top: 5rem;
-                    font-size: .6rem !important;
-                    line-height: 1.25;
+                    font-size: .55rem !important;
+                    line-height: 1.5;
 
-                    .message {
-                        margin-bottom: .25rem;
+                    .message-in,
+                    .message-out {
                         width: 135px;
-                        border-radius: .5rem;
-                        padding: .25rem .5rem;
+                        margin-bottom: .65rem;
+
+                        .message {
+                            display: inline-block;
+                            padding: .25rem .5rem;
+                            margin-bottom: .45rem;
+                            border-radius: .5rem;
+                        }
                     }
 
                     .img-thumbnail {
-                        width: 45px;
-                        height: 45px;
+                        width: 40px;
+                        height: 40px;
                         border-radius: .75rem;
+                        padding: unset;
                     }
 
                     .message-in {
-                        color: hsl(271, 15%, 43%);
-                        background: hsl(271, 36%, 24%);
-                        // margin-bottom: .5rem;
+
+                        .message {
+                            color: hsl(276, 55%, 52%);
+                            border-bottom-left-radius: .2rem;
+                            background: hsla(272, 70%, 84%, 0.377);
+                        }
+
+                        .option {
+                            width: 160px;
+                            height: 30px;
+                            background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+                            color: #fff;
+
+                            span {
+                                font-size: .75rem;
+                                font-weight: 500;
+                            }
+                        }
                     }
 
                     .message-out {
-                        // background: #fff;
                         margin-left: auto;
-                        color: hsl(276, 55%, 52%);
+                        display: flex;
+                        flex-direction: column;
 
-                    //     .img-thumbnail {
-                    //         background-color: red !important;
-                    //     }
+                        .img {
+                            padding: unset;
+                            margin-left: .25rem !important;
+                            background: unset !important;
+                        }
+
+                        .message {
+                            background: #fff;
+                            color: hsl(271, 15%, 43%);
+                            margin-left: auto;
+                            border-bottom-right-radius: .2rem;
+                        }
                     }
-                    .typehere{
-                        // margin: .5rem;
+
+                    .typehere {
                         left: .5rem;
                         right: .5rem;
                         bottom: .5rem;
 
-                        input{
+                        input {
                             border-radius: 1.5rem;
+                            border: none;
 
-                            &::placeholder{
+                            &::placeholder {
                                 font-size: .8rem;
                                 color: hsl(206, 6%, 79%);
                                 margin-bottom: .25rem;
                             }
                         }
-                        
-                        .btn-primary{
+
+                        .btn-primary {
                             background-color: hsl(271, 36%, 24%);
                             border-radius: 10rem;
                             right: .4rem;
@@ -151,12 +183,14 @@ body {
             }
 
             .content {
+                width: 440px;
                 h1 {
                     color: hsl(271, 36%, 24%);
+                    margin-bottom: 1.25rem;
                 }
 
                 p {
-                    color: hsl(270, 7%, 64%);                    ;
+                    color: hsl(270, 7%, 64%);
                 }
             }
         }

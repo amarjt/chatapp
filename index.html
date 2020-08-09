@@ -26,7 +26,7 @@
         <div class="shape shape2"></div>
 
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-6 my-auto d-flex">
+            <div class="col-sm-6 my-auto d-flex">
                 <div class="phonescreen ml-auto position-relative">
                     <div class="notch position-absolute"></div>
 
@@ -40,35 +40,50 @@
                         <i class="fas fa-ellipsis-v mr-3 ml-auto"></i>
                     </div>
 
-                    <div class="messages">
-                        <p class="message message-in">
-                            That sounds great. I’d be happy with that.
-                        </p>
-                        <p class="message message-in">
-                            Could you send over some pictures of your dog, please?
-                        </p>
-                        <div class="message message-out d-flex justify-content-between">
-                            <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-1.jpg" alt="">
-                            <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-2.jpg" alt="">
-                            <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-3.jpg" alt="">
+                    <div class="messages d-flex flex-column">
+                        <div class="message-in">
+                            <p class="message">
+                                That sounds great. I’d be happy with that.
+                            </p>
+                            <p class="message">
+                                Could you send over some pictures of your dog, please?
+                            </p>
                         </div>
-                        <p class="message message-out">
-                            Here are a few pictures. She’s a happy girl!
-                        </p>
-                        <p class="message message-out">
-                            Can you make it?
-                        </p>
-                        <p class="message message-in">
-                            She looks so happy! The time we discussed works. How long shall I take her out for?
-                        </p>
-                        <div class="message message-in option">
-                            30 minute walk
-                            <span class="price">$29</span>
+
+                        <div class="message-out">
+                            <div class="message d-flex img justify-content-between">
+                                <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-1.jpg"
+                                    alt="">
+                                <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-2.jpg"
+                                    alt="">
+                                <img class="img-thumbnail bg-transparent border-0" src="./images/dog-image-3.jpg"
+                                    alt="">
+                            </div>
+                            <p class="message">
+                                Here are a few pictures. She’s a happy girl!
+                            </p>
+                            <p class="message">
+                                Can you make it?
+                            </p>
                         </div>
-                        <div class="message message-in option">
-                            1 hour walk
-                            <span class="price">$49</span>
+                        <div class="message-in">
+                            <p class="message">
+                                She looks so happy! The time we discussed works. How long shall I take her out for?
+                            </p>
+                            <div class="message option d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center"><input class="mr-2" type="radio" name="" id="30min">
+                                    30 minute walk</div>
+                                <span class="price">$29</span>
+                            </div>
+                            <div class="message option d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center"><input class="mr-2" type="radio" name=""
+                                        id="1hr">
+                                    1 hour walk
+                                </div>
+                                <span class="price">$49</span>
+                            </div>
                         </div>
+
                         <div class="typehere position-absolute">
                             <div class="d-flex position-relative">
                                 <input class="form-control" type="text" name="message" placeholder="Type a message...">
@@ -81,8 +96,8 @@
                 </div>
             </div>
 
-            <div class="col-6 my-auto">
-                <div class="content w-75">
+            <div class="col-sm-6 my-auto">
+                <div class="content">
                     <h1>Simple booking</h1>
                     <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss
                         arrangements

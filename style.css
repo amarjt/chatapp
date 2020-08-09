@@ -97,31 +97,72 @@ body .container-fluid .row .phonescreen .appheader .apptitle p {
 body .container-fluid .row .phonescreen .messages {
   margin: .5rem;
   margin-top: 5rem;
-  font-size: .6rem !important;
-  line-height: 1.25;
+  font-size: .55rem !important;
+  line-height: 1.5;
 }
 
-body .container-fluid .row .phonescreen .messages .message {
-  margin-bottom: .25rem;
+body .container-fluid .row .phonescreen .messages .message-in,
+body .container-fluid .row .phonescreen .messages .message-out {
   width: 135px;
-  border-radius: .5rem;
+  margin-bottom: .65rem;
+}
+
+body .container-fluid .row .phonescreen .messages .message-in .message,
+body .container-fluid .row .phonescreen .messages .message-out .message {
+  display: inline-block;
   padding: .25rem .5rem;
+  margin-bottom: .45rem;
+  border-radius: .5rem;
 }
 
 body .container-fluid .row .phonescreen .messages .img-thumbnail {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: .75rem;
+  padding: unset;
 }
 
-body .container-fluid .row .phonescreen .messages .message-in {
-  color: #6e5d7e;
-  background: #3e2753;
+body .container-fluid .row .phonescreen .messages .message-in .message {
+  color: #9241c8;
+  border-bottom-left-radius: .2rem;
+  background: rgba(216, 186, 243, 0.377);
+}
+
+body .container-fluid .row .phonescreen .messages .message-in .option {
+  width: 160px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(90deg, #e942ff, #8838ff);
+  color: #fff;
+}
+
+body .container-fluid .row .phonescreen .messages .message-in .option span {
+  font-size: .75rem;
+  font-weight: 500;
 }
 
 body .container-fluid .row .phonescreen .messages .message-out {
   margin-left: auto;
-  color: #9241c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container-fluid .row .phonescreen .messages .message-out .img {
+  padding: unset;
+  margin-left: .25rem !important;
+  background: unset !important;
+}
+
+body .container-fluid .row .phonescreen .messages .message-out .message {
+  background: #fff;
+  color: #6e5d7e;
+  margin-left: auto;
+  border-bottom-right-radius: .2rem;
 }
 
 body .container-fluid .row .phonescreen .messages .typehere {
@@ -132,6 +173,7 @@ body .container-fluid .row .phonescreen .messages .typehere {
 
 body .container-fluid .row .phonescreen .messages .typehere input {
   border-radius: 1.5rem;
+  border: none;
 }
 
 body .container-fluid .row .phonescreen .messages .typehere input::-webkit-input-placeholder {
@@ -167,8 +209,13 @@ body .container-fluid .row .phonescreen .messages .typehere .btn-primary {
   padding: .25rem .55rem;
 }
 
+body .container-fluid .row .content {
+  width: 440px;
+}
+
 body .container-fluid .row .content h1 {
   color: #3e2753;
+  margin-bottom: 1.25rem;
 }
 
 body .container-fluid .row .content p {
